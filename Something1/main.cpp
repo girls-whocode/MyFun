@@ -13,23 +13,15 @@
  */
 
 #include <iostream>
-using namespace std;
+#include "custom.h"
 
-int main ()
-{
-  // declaring variables:
-  int a, b;
-  int result;
+int main() {
+    int x = 15;
+    int y = 5;
 
-  // process:
-  a = 5;
-  b = 2;
-  a = a + 1;
-  result = a - b;
+    /*        35            7             8       3                  */
+    int ans = multiply (y, (subtract (x, (add (y, divide (x, y))))));
 
-  // print out the result:
-  cout << result;
-
-  // terminate the program:
-  return 0;
+    std::cout << "Hello World, your answer is " << ans;
+    return 0;
 }
